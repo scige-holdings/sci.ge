@@ -1,7 +1,30 @@
+# ========================================
+# SCI.GE — Robots Exclusion Protocol
+# Status: Anti-Indexation Mode
+# ========================================
+
 User-agent: *
 Disallow: /
 
-# Разрешаем индексирование после запуска:
-# Sitemap: https://sci.ge/sitemap.xml
+# Block SEO Scraping & AI Crawlers
+User-agent: AhrefsBot
+Disallow: /
 
-[4] Commit changes → Commit directly to main
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+# Allow social previews
+User-agent: WhatsApp
+Allow: /index.html
+
+User-agent: TelegramBot
+Allow: /index.html
+
+User-agent: Twitterbot
+Allow: /index.html
