@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /
+
+# Разрешаем индексирование после запуска:
+# Sitemap: https://sci.ge/sitemap.xml
+
+[4] Commit changes → Commit directly to main
