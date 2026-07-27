@@ -1,4 +1,4 @@
 Contact: mailto:security@sci.ge
-Expires: 2027-07-15T00:00:00.000Z
+Expires: 2027-07-15T00:00:00Z
 Preferred-Languages: en, ka, hy, ru
 Canonical: https://sci.ge/.well-known/security.txt
