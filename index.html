@@ -1,162 +1,127 @@
 <!DOCTYPE html>
-<html lang="ka">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Защитный щит от индексации поисковыми системами -->
-    <meta name="robots" content="noindex, nofollow, nosnippet, noarchive">
-    
-    <title>SCI.GE — South Caucasus Science & Innovations</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Noto+Sans+Georgian:wght@400;600&display=swap" rel="stylesheet">
-
-    <style>
-        :root {
-            --bg-main: #0f172a;
-            --bg-card: #1e293b;
-            --text-main: #f8fafc;
-            --text-muted: #cbd5e1;
-            --text-dark: #64748b;
-            --accent: #38bdf8;
-            --border: #334155;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        html, body {
-            width: 100%;
-            min-height: 100vh;
-            background-color: var(--bg-main);
-            color: var(--text-main);
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            -webkit-text-size-adjust: 100%;
-        }
-
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 16px;
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 600px;
-            width: 100%;
-            background-color: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            padding: 32px 24px;
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
-        }
-
-        h1 {
-            font-size: 22px;
-            margin-bottom: 20px;
-            color: var(--accent);
-            font-weight: 600;
-            text-align: center;
-        }
-
-        .lang-en {
-            margin-bottom: 20px;
-            text-align: left;
-        }
-
-        .lang-ka {
-            font-family: 'Noto Sans Georgian', sans-serif;
-            text-align: left;
-            border-top: 1px solid var(--border);
-            padding-top: 20px;
-            margin-top: 20px;
-        }
-
-        p {
-            font-size: 14px;
-            color: var(--text-muted);
-            margin-bottom: 12px;
-            word-wrap: break-word;
-            overflow-wrap: break-word;
-        }
-
-        p:last-child {
-            margin-bottom: 0;
-        }
-
-        i {
-            opacity: 0.85;
-        }
-
-        .email {
-            font-weight: 600;
-            color: var(--accent);
-            text-align: center;
-            margin-top: 24px;
-            font-size: 15px;
-            background: rgba(56, 189, 248, 0.08);
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid rgba(56, 189, 248, 0.2);
-        }
-
-        .email a {
-            color: var(--accent);
-            text-decoration: none;
-        }
-
-        .email a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            margin-top: 24px;
-            font-size: 11px;
-            color: var(--text-dark);
-            text-align: center;
-            border-top: 1px solid var(--border);
-            padding-top: 16px;
-        }
-
-        @media (max-width: 480px) {
-            .container {
-                padding: 20px 16px;
-            }
-            h1 {
-                font-size: 18px;
-            }
-            p {
-                font-size: 13px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SCI.GE — South Caucasus Science &amp; Innovations</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: #0b121c;
+      color: #d8e1eb;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+    }
+    .card {
+      background-color: #131f2e;
+      border: 1px solid #24364d;
+      border-radius: 12px;
+      max-width: 680px;
+      width: 100%;
+      padding: 40px 36px 32px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+    }
+    h1 {
+      color: #38bdf8;
+      font-size: 26px;
+      font-weight: 700;
+      text-align: center;
+      letter-spacing: 0.3px;
+      margin-bottom: 26px;
+    }
+    p {
+      font-size: 15.5px;
+      margin-bottom: 14px;
+      color: #dce4ee;
+    }
+    p.italic {
+      font-style: italic;
+      color: #a9bacd;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #223247;
+      margin: 26px 0;
+    }
+    .btn {
+      display: block;
+      width: 100%;
+      text-align: center;
+      background-color: #162a3e;
+      border: 1px solid #29496b;
+      color: #38bdf8;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 14px 20px;
+      border-radius: 8px;
+      margin-top: 26px;
+      transition: background-color 0.2s, border-color 0.2s;
+    }
+    .btn:hover {
+      background-color: #1d3854;
+      border-color: #38bdf8;
+    }
+    .meta {
+      text-align: center;
+      font-size: 13px;
+      color: #8fa5bd;
+      margin-top: 14px;
+    }
+    .footer {
+      border-top: 1px solid #1e2d40;
+      margin-top: 26px;
+      padding-top: 18px;
+      text-align: center;
+      font-size: 12px;
+      color: #6b8098;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>SCI.GE — South Caucasus Science & Innovations</h1>
+  <main class="card">
+    <h1>SCI.GE — South Caucasus Science &amp; Innovations</h1>
 
-        <div class="lang-en">
-            <p>Welcome to SCI.GE. This domain is reserved for a non-commercial, personal project dedicated to the popularization of science, educational initiatives, and technology trends in the South Caucasus region.</p>
-            <p><i>The website and its digital infrastructure are currently under planning and development.</i></p>
-        </div>
+    <p>
+      <strong>SCI.GE</strong> is a flagship 3-letter digital asset dedicated to science,
+      artificial intelligence, biotechnology, and research initiatives in Georgia and the South Caucasus.
+    </p>
+    <p class="italic">
+      Originally reserved for an independent scientific and technological initiative, the SCI.GE domain
+      is currently open to strategic partnership or direct acquisition inquiries from qualified institutions,
+      research centers, laboratories, and technology companies through December 20, 2026.
+    </p>
 
-        <div class="lang-ka">
-            <p>კეთილი იყოს თქვენი მობრძანება ვებ-გვერდზე SCI.GE. ეს დომენი განკუთვნილია არაკომერციული, პერსონალური პროექტისთვის, რომელიც ეძღვნება მეცნიერების პოპულარიზაციას, საგანმანათლებლო ინიციატივებსა და ტექნოლოგიურ ტენდენციებს სამხრეთ კავკასიის რეგიონში.</p>
-            <p><i>ვებ-გვერდი და მისი ციფრული ინფრასტრუქტურა ამჟამად იმყოფება დაგეგმვისა და შემუშავების პროცესში.</i></p>
-        </div>
+    <hr />
 
-        <div class="email">
-            Contact Administration: <a href="mailto:info@sci.ge">info@sci.ge</a>
-        </div>
+    <p>
+      <strong>SCI.GE</strong> წარმოადგენს პრემიუმ 3-ასოიან ციფრულ აქტივს, რომელიც განკუთვნილია
+      მეცნიერების, ხელოვნური ინტელექტის (AI), ბიოტექნოლოგიებისა და კვლევითი ინიციატივებისთვის
+      საქართველოსა და სამხრეთ კავკასიაში.
+    </p>
+    <p class="italic">
+      თავდაპირველად დამოუკიდებელი სამეცნიერო-ტექნოლოგიური პროექტისთვის დარეზერვებული დომენი SCI.GE
+      ამჟამად ღიაა სტრატეგიული პარტნიორობის ან პირდაპირი შეძენის შემოთავაზებებისთვის კვლევითი ცენტრების,
+      ლაბორატორიების, უნივერსიტეტებისა და ტექნოლოგიური კომპანიების მხრიდან (2026 წლის 20 დეკემბრამდე).
+    </p>
 
-        <footer>
-            © 2026 SCI.GE. All rights reserved. Registered by a private individual for personal, educational, and non-commercial use.
-        </footer>
+    <a class="btn" href="mailto:info@sci.ge?subject=SCI.GE%20Acquisition%20Inquiry">
+      Direct Acquisition &amp; Inquiries: info@sci.ge
+    </a>
+
+    <div class="meta">
+      Direct holder &bull; Instant transfer via NIC.GE (EPP) in Tbilisi or Escrow<br />
+      Telegram: @scisys_pro &nbsp;|&nbsp; WhatsApp: +995 555 60 82 49
     </div>
+
+    <div class="footer">
+      &copy; 2026 SCI.GE — Independent Digital Asset. All rights reserved.
+    </div>
+  </main>
 </body>
 </html>
